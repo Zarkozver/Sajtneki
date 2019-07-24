@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Arimo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   
+    <header>
+        <div class="logo">Logo</div>
+        <div class="ham">
+            <div class="ham-el1"></div>
+            <div class="ham-el2"></div>
+            <div class="ham-el3"></div>
+        </div>
+    </header>
+    <div class="overlay-menu">
+        <div class="menu-wrap">
+               <div data-aos="fade-left" class="menu-item">
+                Home
+                </div>
+            <div data-aos="fade-left" class="menu-item">
+                About
+            </div>
+            <div data-aos="fade-left" class="menu-item">
+                Contact
+            </div>
+            <div data-aos="fade-left" class="menu-item">
+                Gallery
+            </div>
+            <div data-aos="fade-left" class="menu-item">
+                Support
+            </div>
+        </div>
+    </div>
+    <div class="txt-wrap">
+        <div class="txt-content">
+            Neki sample tekst.
+        </div>
+        <div class="txt-tab">
+            neki tab
+        </div>
+        <div class="txt-tab">
+            drugi tab
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="http://sf.co.ua/12/07/wallpaper-2099773.jpg" alt="" class="sshow">
+        </div>
+    </div>
+    
+    <div class="title-wrap">
+        <div class="title-inner">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        </div>
+        <div  class="title-bottom">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, velit! Ut, eligendi atque earum ullam, repudiandae assumenda hic, veniam adipisci at laudantium provident?
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="wrap-slider">
+        <div class="slider">
+            <ul class="slides">
+              <li>
+                <img src="https://cdn.pixabay.com/photo/2013/11/28/10/03/autumn-219972_960_720.jpg"> 
+                <div class="caption center-align">
+                    <h3>This is our big Tagline!</h3>
+                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
+              </li>
+              <li>
+                <img src="https://cdn.pixabay.com/photo/2014/06/21/20/11/power-station-374097_960_720.jpg"> 
+                <div class="caption left-align">
+                    <h3>Left Aligned Caption</h3>
+                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
+              </li>
+              <li>
+                <img src="https://cdn.pixabay.com/photo/2018/04/16/12/59/face-3324569_960_720.jpg">
+                <div class="caption right-align">
+                     <h3>Right Aligned Caption</h3>
+                     <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
+              </li>
+              <li>
+                <img src="https://cdn.pixabay.com/photo/2019/06/23/13/15/power-plant-4293720_960_720.jpg"> 
+                <div class="caption center-align">
+                    <h3>This is our big Tagline!</h3>
+                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
+              </li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        
+    </footer>
+    <script>
+      AOS.init();
+    </script>    
+    <script>
+        $(document).ready(function(){
+            $('.ham').click(function(){
+               $('.overlay-menu').toggleClass('block'); 
+                $('.ham div').toggleClass('ham-chg');
+                $('.logo').toggleClass('logo-chg');
+                $('.menu-item').toggleClass('block');
+                $('.menu-wrap').animate({
+                    opacity:1,
+                    marginRight:"200px"
+                },700);
+            });
+            $('.slider').slider();
+            $('.parallax').parallax();
+        });
+    </script>
+
+</body>
+</html>

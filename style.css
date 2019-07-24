@@ -1,0 +1,155 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    padding: 20px 200px 0 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ham{
+    width: 50px;
+    height: 50px;
+    position: inherit;
+    z-index: 2;
+}
+.ham:hover{
+    cursor: pointer;
+}
+.logo{
+    position: inherit;
+    z-index: 2;
+    font-size: 40px;
+}
+.ham div{
+    width: 50px;
+    height: 3px;
+    position: fixed;
+    z-index: 2;
+    margin-top: 10px;
+    border-radius: 9px;
+}
+.ham-el1{
+    top: 20px;
+    background-color: black;
+}
+.ham-el2{
+    top: 35px;
+    background-color: black;
+}
+.ham-el3{
+    top: 50px;
+    background-color: black;
+}
+.txt-wrap{
+    margin-left: 200px;
+    margin-top: 200px;
+}
+.txt-content{
+    
+    font-size: 60px;
+    font-family: 'Arimo', sans-serif;
+    margin-bottom: 60px;
+}
+.txt-tab{
+    float: left;
+    font-size: 25px;
+    border-bottom: 1px solid black;
+    font-family: 'Open Sans', sans-serif;
+    margin-right: 70px;
+    transition: all  0.2s;
+}
+.txt-tab:hover{
+    border-bottom: none;
+}
+.parallax-container{
+    margin-top: 50px;
+    height: 700px;
+    overflow: hidden;
+}
+.clear{
+    clear: both;
+}
+
+.title-wrap{
+    float: right;
+    width: 1400px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+.title-inner{
+    width: 800px;
+    font-size: 60px;
+    font-family: 'Arimo', sans-serif;
+    line-height: 70px;
+    margin-bottom: 60px;
+}
+.title-bottom{
+    width: 800px;
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 50px;
+}
+@media (max-width:1400px){
+    .title-inner,.title-bottom{
+        margin-left: 500px;
+        text-align: center;
+    }
+    .title-inner{
+      margin-bottom: 60px;  
+    }
+}
+footer{
+     width: 100%;
+     height: 400px;
+     background-color: rgb(20,20,20);
+}
+.overlay-menu{
+    position: fixed;
+    display: none;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+    backgrsound-color: rgba(233,33,0,0.9);
+}
+.block{
+    display: block;
+}
+.ham-chg{
+    background-color: aliceblue;
+    color: aliceblue;
+}
+.sshow{
+    widsth: 100%;
+    marsgin-left: 50%;
+    marsgin-top: -200px;
+}
+.menu-wrap{
+    float: right;
+    margin-top: 200px;
+    margin-right: 150px;
+    opacity: 0.2;
+}
+.menu-item{
+    text-align: right;
+    font-size: 40px;
+    color: aliceblue;
+    
+    margin-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.logo-chg{
+    color: aliceblue;
+}
+.menu-item-chg{
+    opacity: 0;
+    margin-right: 200px;
+}
+.wrap-slider{
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
